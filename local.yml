@@ -3,6 +3,8 @@
   become: true
   
   tasks:
-  - name: Install htop
-    apt:
-      name: htop
+  - name: create a file
+    file:
+      path: "/tmp/test_file1"
+      state: touch
+    become: yes
