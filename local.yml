@@ -1,4 +1,4 @@
-- hosts: devops
+- hosts: all 
 #  connection: local
 #  become: true
 #  pre_tasks:
