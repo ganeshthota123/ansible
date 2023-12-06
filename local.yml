@@ -13,5 +13,5 @@
 #      state: touch
 #    become: yes
 #
-     tasks:
-       - include: tasks/pacakges.yml
+  tasks:
+    - include: tasks/pacakges.yml
