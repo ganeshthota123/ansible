@@ -1,11 +1,11 @@
 - hosts: localhost
 #  connection: local
 #  become: true
-  pre_tasks:
-    - name: update repos
-      apt:
-        update_cache: yes
-      changed_when: False  
+#  pre_tasks:
+#    - name: update repos
+#      apt:
+#        update_cache: yes
+#      changed_when: False  
   tasks:
   - name: create a file
     file:
@@ -13,7 +13,7 @@
       state: touch
     become: yes
   - name: Install package
-    apt:
+    yum:
       name:
         - curl 
       state: latest
