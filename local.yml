@@ -1,6 +1,6 @@
 - hosts: localhost
-  connection: local
-  become: true
+#  connection: local
+#  become: true
   
   tasks:
   - name: create a file
