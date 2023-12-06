@@ -1,0 +1,12 @@
+- name: create user
+  user:
+    name: kumar
+    system: yes
+
+- name: copy file
+  copy:
+    src: /etc/sudoers
+    dest: /tmp/
+    owner: root
+    group: root
+    mode: 0440 
