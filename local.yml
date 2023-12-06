@@ -6,14 +6,12 @@
 #      apt:
 #        update_cache: yes
 #      changed_when: False  
-  tasks:
-  - name: create a file
-    file:
-      path: "/tmp/test_file_root1"
-      state: touch
-    become: yes
-  - name: Install package
-    yum:
-      name:
-        - curl 
-      state: latest
+#  tasks:
+#  - name: create a file
+#    file:
+#      path: "/tmp/test_file_root1"
+#      state: touch
+#    become: yes
+#
+     tasks:
+       - include: tasks/pacakges.yml
