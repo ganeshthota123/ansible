@@ -16,3 +16,4 @@
   tasks:
     - include: tasks/pacakges.yml
     - include: tasks/file.yml
+    - include: tasks/cron.yml
